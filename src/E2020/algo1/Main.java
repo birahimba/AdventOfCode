@@ -11,12 +11,11 @@ public class Main{
         List<Integer> nums = new ArrayList<>();
 
         Scanner sc = new Scanner(new File("src/E2020/algo1/input.txt"));
-        //on ajoute nos num dans le input
+
         while (sc.hasNextInt()) {
             nums.add(sc.nextInt());
         }
 
-        //on sort la liste
         Collections.sort(nums);
 
         for (int i = 0; i < nums.size(); i++) {

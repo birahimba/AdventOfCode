@@ -17,16 +17,17 @@ public class Main{
         }
 
         Collections.sort(nums);
-
         for (int i = 0; i < nums.size(); i++) {
-            int difference = targetNum - nums.get(i);
+            int num = nums.get(i);
+            int difference = targetNum - num;
             int index = Collections.binarySearch(nums, difference);
             if (index > 0 && index != i) {
-                int result = difference * nums.get(i);
+                int result = difference * num;
                 System.out.println(result);
                 break;
             }
 
         }
+
     }
 }

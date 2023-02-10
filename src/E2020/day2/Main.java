@@ -14,8 +14,10 @@ public class Main {
         char[] carac  = new char[data.size()];
         String[] password = new String[data.size()];
 
+
         for(int i = 0; i< data.size(); i++){
 
+           min[i]  =  Integer.parseInt(data.get(0).split("-")[0]);
         }
 
         return data.size();

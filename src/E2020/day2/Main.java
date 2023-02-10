@@ -1,4 +1,4 @@
-package E2020.algo2;
+package E2020.day2;
 
 import java.io.File;
 import java.io.FileNotFoundException;

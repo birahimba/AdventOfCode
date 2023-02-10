@@ -1,4 +1,4 @@
-package E2020.algo1;
+package E2020.day1;
 
 import java.io.File;
 import java.io.FileNotFoundException;
@@ -10,11 +10,12 @@ public class Main{
         int targetNum = 2020;
         List<Integer> nums = new ArrayList<>();
 
-        Scanner sc = new Scanner(new File("src/E2020/algo1/input.txt"));
+        Scanner sc = new Scanner(new File("src/E2020/day1/input.txt"));
 
         while (sc.hasNextInt()) {
             nums.add(sc.nextInt());
         }
+        sc.close();
 
         Collections.sort(nums);
         for (int i = 0; i < nums.size(); i++) {

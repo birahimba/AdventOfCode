@@ -12,6 +12,20 @@ public class Main {
 
         BufferedReader input  = new BufferedReader(new FileReader("src/E2015/day2/input.txt"));
         String read;
+
+        //Exo1
+
+       /* while((read = input.readLine()) != null){
+            String[] nbre = read.split("x");
+            l = Integer.parseInt(nbre[0]);
+            w = Integer.parseInt(nbre[1]);
+            h = Integer.parseInt(nbre[2]);
+            int min = Integer.min(Integer.min(l*w, l*h), w*h);
+            surface  = ((2 * l * w )+ (2 * w * h) + (2 * h * l) )+ min ;
+            result += surface;
+        }
+        System.out.println(result);*/
+    // Exo2
         while((read = input.readLine()) != null){
             String[] nbre = read.split("x");
             l = Integer.parseInt(nbre[0]);
@@ -22,6 +36,8 @@ public class Main {
             result += surface;
         }
         System.out.println(result);
+        input.close();
+
         input.close();
 
 

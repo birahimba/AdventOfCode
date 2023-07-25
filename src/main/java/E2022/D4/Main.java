@@ -23,7 +23,7 @@ public class Main {
                     countFullyContains++;
                 }
 
-                // Exo 2:  compter le nombre de paires d'affectation avec des sections qui se chevauchent
+                // Exo 2:  compter le nombre de paires d'affectation avec des sections se chevauchant
                 if (assignment1.overlaps(assignment2) || assignment2.overlaps(assignment1)) {
                     countOverlaps++;
                 }

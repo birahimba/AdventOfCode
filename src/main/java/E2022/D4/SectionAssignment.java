@@ -20,7 +20,7 @@ public class SectionAssignment {
     }
 
     /**
-     * Verifie s'il y a chauvauchement
+     * Verifie s'il y a chevauchement
      * @param sectionAssignment section
      * @return true si au moins une section est commune entre les deux plages
      */

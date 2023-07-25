@@ -9,6 +9,7 @@ public class Main {
     public static void main(String[] args) {
         String inputFile = "src/main/java/E2022/D4/input.txt";
         int countFullyContains = 0;
+        int countOverlaps = 0;
 
         try (BufferedReader br = new BufferedReader(new FileReader(inputFile))) {
             String line;
@@ -20,12 +21,17 @@ public class Main {
                 if (assignment1.fullyContains(assignment2) || assignment2.fullyContains(assignment1)) {
                     countFullyContains++;
                 }
+
+                if (assignment1.overlaps(assignment2) || assignment2.overlaps(assignment1)) {
+                    countOverlaps++;
+                }
             }
         } catch (IOException e) {
             e.printStackTrace();
         }
 
         System.out.println("Nombre de paires d'affectation où l'une contient entièrement l'autre : " + countFullyContains);
+        System.out.println("Nombre de paires d'affectation avec des sections qui se chevauchent : " + countOverlaps);
     }
 
     private static SectionAssignment parseSectionAssignment(String assignmentString) {

@@ -34,6 +34,12 @@ public class Main {
         System.out.println("Nombre de paires d'affectation avec des sections qui se chevauchent : " + countOverlaps);
     }
 
+
+    /**
+     *  Parsing et conversion
+     * @param assignmentString une paire daffecttation
+     * @return un nouvel obejet SectionAssignement avec les valeurs
+     */
     private static SectionAssignment parseSectionAssignment(String assignmentString) {
         String[] sections = assignmentString.split("-");
         int start = Integer.parseInt(sections[0]);

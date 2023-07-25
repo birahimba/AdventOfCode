@@ -18,10 +18,12 @@ public class Main {
                 SectionAssignment assignment1 = parseSectionAssignment(assignments[0]);
                 SectionAssignment assignment2 = parseSectionAssignment(assignments[1]);
 
+                // Exo 1:  Nombre de paires d'affectation où l'une contient entièrement l'autre
                 if (assignment1.fullyContains(assignment2) || assignment2.fullyContains(assignment1)) {
                     countFullyContains++;
                 }
 
+                // Exo 2:  compter le nombre de paires d'affectation avec des sections qui se chevauchent
                 if (assignment1.overlaps(assignment2) || assignment2.overlaps(assignment1)) {
                     countOverlaps++;
                 }
